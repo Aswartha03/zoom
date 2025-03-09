@@ -71,7 +71,7 @@ function createFunctionRegistry(){
         exportRegistery:function(){
             // console.log(Names)
             let str = JSON.stringify(Names)
-            // console.log(str)
+            console.log(str)
         }
 
 
@@ -81,8 +81,8 @@ function createFunctionRegistry(){
 const registry = createFunctionRegistry();
 registry.registerFunction("double", x => x * 2);
 console.log(registry.executeFunction("double", [5]));
-registry.mapFunction("double",[1,2,3,4,5])
-registry.filterFunction("double",[2,3,4,5])
-registry.reduceFunction("double",[1,2,3,4,5],5)
+// registry.mapFunction("double",[1,2,3,4,5])
+// registry.filterFunction("double",[2,3,4,5])
+// registry.reduceFunction("double",[1,2,3,4,5],5)
 registry.executeFunctionAsync("double",4,2000)
-registry.exportRegistery()
+// registry.exportRegistery()
