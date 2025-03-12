@@ -8,7 +8,7 @@ function createOTPSystem(){
             for(let i=0;i<6;i++){
                 value+=numbers[Math.floor(Math.random()*numbers.length)]// in gives one number(index) in the numbers array 
             }
-            value = Number(value)
+            value = Number(value)// value is random OTP
             OTP=value 
             return ("Your OTP is: "+OTP)
         },
@@ -25,11 +25,11 @@ function createOTPSystem(){
     }
 }
 const otpSystem = createOTPSystem();  
-console.log(otpSystem.generateOTP()); // "Your OTP is: 482193"  
-console.log(otpSystem.getOTP());      // "482193"  
+console.log(otpSystem.generateOTP());  
+console.log(otpSystem.getOTP());       
 console.log(otpSystem.getOTP());      // "OTP expired"  
-console.log(otpSystem.generateOTP()); // "Your OTP is: 739182"  
-console.log(otpSystem.getOTP());      // "739182"  
-console.log(otpSystem.getOTP()); 
-console.log(otpSystem.generateOTP()); // "Your OTP is: 482193"  
+console.log(otpSystem.generateOTP());   
+console.log(otpSystem.getOTP());      
+console.log(otpSystem.getOTP()); // OTP expired
+console.log(otpSystem.generateOTP());  
 console.log(otpSystem.getOTP());      // "OTP expired"  
